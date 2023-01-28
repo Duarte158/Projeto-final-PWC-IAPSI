@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- ligaões-->
+
+    
+    <link rel="stylesheet" href="css/cssGeral.css">
+    <link rel="stylesheet" href="css/cssHome.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="stylesheet" href="RELOGIO.scss">
+
+    <script src="js/js.js" defer ></script>
+    
+  
+
+    <link rel="icon" href="img/icon.ico" type="image">
+
+
+  
+
+    <!-- Google fonts // Utilizado para usar a diversos tipos de fontes de escrita // Nesta caso é utilizada a fonte Ubuntu-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--Font awesome //Utilizado para adicionar icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    
+    <title>Clima</title>
+</head>
+<!--BARRA PARA MENU-->
+<body onload="startTime()">
+
+
+
+  
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active-item">Home</a>
+            <a href="detalhes.html" class="item">Detalhes</a>
+            <a href="forecast.html" class="item" >Forecast</a>
+            <a href="favoritos.css" class="item">Favoritos</a>
+            
+          </div>
+       
+    
+         
+          <div>
+            <h1 id="relogio"> </h1>
+          </div>
+         
+<!--FIM DA BARRA PARA MENU-->
+<div class="all">
+
+
+
+
+<div class="container">
+    <div class="form">
+        <h3>Pesquise por uma localização:</h3>
+        <!--Barra de Pesquisa-->
+        <div class="form-input-container">
+            <input type="text" placeholder="Escreva o nome da localidade" id="input-cidade">
+            <button id="search">
+                <i class="fa-solid fa-magnifying-glass"></i> <!--Icon da lupa-->
+            </button>
+        </div>
+        <!--Fim da Barra de Pesquisa-->
+    
+    <!--Informações sobre a cidade-->
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+            <span id="cidade"></span>
+            <img  id="pais" /> 
+        </h2>
+        <!--Temperatura-->
+        <p id="temperatura"><span>Temperatura</span>&deg;C</p>
+        <div id="description-container">
+            <p id="descricao"> Tempo </p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-tempo"> <!--Ligação a uma api de imagens para condição do tempo-->
+        </div>
+        <!--Humidade-->
+        <div id="details-container">
+            <p id="humidade">
+                <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                <span>Humidade</span>
+            </p>
+            <!--Vento-->
+            <p id="vento">
+                <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                <span>Vento</span>
+            </p>
+        </div>
+    </div>
+    </div>
+    <!--Fim das Informações sobre a cidade-->
+
+</div>
+<!----------------------------------------------------------------LONDRES------------------------------------------------------------->
+<div class="paises">
+    <div class="form">
+        
+    </div>
+    <!--Informações sobre a cidade-->
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+            <span id="cidadelondres">(Informações Cidade)</span>
+            <img  id="paislondres" /> 
+        </h2>
+        <!--Temperatura-->
+        <p id="temperaturalondres"><span>Temperatura</span>&deg;C</p>
+        <div id="description-container">
+            <p id="descricaolondres"> Tempo </p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-tempolondres"> <!--icon tempo-->
+        </div>
+        <!--Humidade-->
+        <div id="details-container">
+            <p id="humidadelondres">
+                <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                <span>Humidade</span>
+            </p>
+            <!--Vento-->
+            <p id="ventolondres">
+                <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                <span>Vento</span>
+            </p>
+        </div>
+
+    </div>
+
+
+</div>
+ <!----------------------------------------------------------------lisboa------------------------------------------------------------->
+    <div class="paises">
+        <div class="form">
+            
+        </div>
+        <!--Informações sobre a cidade-->
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+                <span id="cidadelisboa">(Informações Cidade)</span>
+                <img  id="paislisboa" /> 
+            </h2>
+            <!--Temperatura-->
+            <p id="temperaturalisboa"><span>Temperatura</span>&deg;C</p>
+            <div id="description-container">
+                <p id="descricaolisboa"> Tempo </p>
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-tempolisboa"> <!--icon tempo-->
+            </div>
+            <!--Humidade-->
+            <div id="details-container">
+                <p id="humidadelisboa">
+                    <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                    <span>Humidade</span>
+                </p>
+                <!--Vento-->
+                <p id="ventolisboa">
+                    <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                    <span>Vento</span>
+                </p>
+            </div>
+    
+        </div>
+
+</div>
+
+ <!----------------------------------------------------------------Madrid------------------------------------------------------------->
+
+ <div class="paises">
+    <div class="form">
+        
+    </div>
+    <!--Informações sobre a cidade-->
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+            <span id="cidademadrid">(Informações Cidade)</span>
+            <img  id="paismadrid" /> 
+        </h2>
+        <!--Temperatura-->
+        <p id="temperaturamadrid"><span>Temperatura</span>&deg;C</p>
+        <div id="description-container">
+            <p id="descricaomadrid"> Tempo </p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-tempomadrid"> <!--icon tempo-->
+        </div>
+        <!--Humidade-->
+        <div id="details-container">
+            <p id="humidademadrid">
+                <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                <span>Humidade</span>
+            </p>
+            <!--Vento-->
+            <p id="ventomadrid">
+                <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                <span>Vento</span>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+ <!-----------------------------------------paris ------------------------------------------------>
+ <div class="paises">
+    <div class="form">
+        
+    </div>
+    <!--Informações sobre a cidade-->
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+            <span id="cidadeparis">(Informações Cidade)</span>
+            <img  id="paisparis" /> 
+        </h2>
+        <!--Temperatura-->
+        <p id="temperaturaparis"><span>Temperatura</span>&deg;C</p>
+        <div id="description-container">
+            <p id="descricaoparis"> Tempo </p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-tempoparis"> <!--icon tempo-->
+        </div>
+        <!--Humidade-->
+        <div id="details-container">
+            <p id="humidadeparis">
+                <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                <span>Humidade</span>
+            </p>
+            <!--Vento-->
+            <p id="ventoparis">
+                <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                <span>Vento</span>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+ <!-----------------------------------------roma ------------------------------------------------>
+
+<div class="paises">
+    <div class="form">
+        
+    </div>
+    <!--Informações sobre a cidade-->
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+            <span id="cidaderoma">(Informações Cidade)</span>
+            <img  id="paisroma" /> 
+        </h2>
+        <!--Temperatura-->
+        <p id="temperaturaroma"><span>Temperatura</span>&deg;C</p>
+        <div id="description-container">
+            <p id="descricaoroma"> Tempo </p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-temporoma"> <!--icon tempo-->
+        </div>
+        <!--Humidade-->
+        <div id="details-container">
+            <p id="humidaderoma">
+                <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                <span>Humidade</span>
+            </p>
+            <!--Vento-->
+            <p id="ventoroma">
+                <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                <span>Vento</span>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+ <!-----------------------------------------Tokyo ------------------------------------------------>
+
+
+
+<div class="paises">
+    <div class="form">
+        
+    </div>
+    <!--Informações sobre a cidade-->
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fa-location-dot"></i> <!--Icon do pin de localização-->
+            <span id="cidadetokyo">(Informações Cidade)</span>
+            <img  id="paistokyo" /> 
+        </h2>
+        <!--Temperatura-->
+        <p id="temperaturatokyo"><span>Temperatura</span>&deg;C</p>
+        <div id="description-container">
+            <p id="descricaotokyo"> Tempo </p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="icon-tempotokyo"> <!--icon tempo-->
+        </div>
+        <!--Humidade-->
+        <div id="details-container">
+            <p id="humidadetokyo">
+                <i class="fa-solid fa-droplet"></i> <!--Icon da gota de agua-->
+                <span>Humidade</span>
+            </p>
+            <!--Vento-->
+            <p id="ventotokyo">
+                <i class="fa-solid fa-wind"></i><!--Icon do vento-->
+                <span>Vento</span>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+<!--Fim das Informações sobre a cidade-->
+</div>
+
+</div>
+</div>
+</body>
+</html>

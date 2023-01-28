@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/cssGeral.css">
+    <link rel="stylesheet" href="css/forecast.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="js/forecast.js" defer ></script>
+
+
+
+    <link rel="icon" href="img/icon.ico" type="image">
+
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+  
+    
+    
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="item">Home</a>
+        <a href="detalhes.html" class="item">Detalhes</a>
+        <a href="forecast.html" class="active-item" >Forecast</a>
+        <a href="favoritos.html" class="item">Favoritos</a>
+       
+    </div>
+    
+
+
+        <!--Bara de pesquisa-->
+
+    <div class="titulo">
+        <h2>Forecast 5 dias</h2>
+        
+    </div>
+
+
+
+    <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" id="input-cidade" placeholder="Pesquisar localidade">
+           <button type="submit" class="searchButton" id="search">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+    </div>
+
+    <div class="botaoLoc">
+        <button class="locAtual" onclick="getLocation()">Localização Atual</button>
+    </div>
+
+    <p id="lon"></p>
+    <p id="lat"></p>
+
+
+
+<div class="all">
+         
+                
+            <div class="forecastDia">
+              
+
+                <div>
+                    <h2 class="localizacao" id="cidade">..........................</h2>
+                 </div>   
+
+                 <h2>Previsão 5 dias</h2>
+
+                <div class="divider2"></div>
+                
+        
+                <div class="semanaF">
+                        
+                    <div class="diaF">
+                    <p class="data">DiaSemana Mes Dia ano</p>
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img">
+                    <p id="descricao"> Tempo </p>
+                    <p class="temperatura" id="tempmax"><span>MAX</span>&deg;C</p>
+                    <p class="temperatura"> / </p>
+                    <p class="temperatura" id="tempmin"><span>MIN</span>&deg;C</p>
+                    </div>
+
+                    <div class="diaF">
+                        <p class="data2">DiaSemana Mes Dia ano</p>
+                        <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img2">
+                        <p id="descricao2"> Tempo </p>
+                        <p class="temperatura" id="tempmax2"><span>MAX</span>&deg;C</p>
+                        <p class="temperatura"> / </p>
+                        <p class="temperatura" id="tempmin2"><span>MIN</span>&deg;C</p>
+                        </div>
+        
+                        <div class="diaF">
+                            <p class="data3">DiaSemana Mes Dia ano</p>
+                            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img3">
+                            <p id="descricao3"> Tempo </p>
+                            <p class="temperatura" id="tempmax3"><span>MAX</span>&deg;C</p>
+                            <p class="temperatura"> / </p>
+                            <p class="temperatura" id="tempmin3"><span>MIN</span>&deg;C</p>
+                            </div>
+        
+        
+                            <div class="diaF">
+                                <p class="data4">DiaSemana Mes Dia ano</p>
+                                <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img4">
+                                <p id="descricao4"> Tempo </p>
+                                <p class="temperatura" id="tempmax4"><span>MAX</span>&deg;C</p>
+                                <p class="temperatura"> / </p>
+                                <p class="temperatura" id="tempmin4"><span>MIN</span>&deg;C</p>
+                                </div>
+        
+                                <div class="diaF">
+                                    <p class="data5">DiaSemana Mes Dia ano</p>
+                                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img5">
+                                    <p id="descricao5"> Tempo </p>
+                                    <p class="temperatura" id="tempmax5"><span>MAX</span>&deg;C</p>
+                                    <p class="temperatura"> / </p>
+                                    <p class="temperatura" id="tempmin5"><span>MIN</span>&deg;C</p>
+                                    </div>
+        
+                   
+        
+        
+        
+                </div>
+        
+                <h2>Previsão 3 horas</h2>
+                <div class="divider2"></div>
+
+
+                <div class="semanaF">
+                        
+                    <div class="diaF">
+                    <p class="data3h">DiaSemana Mes Dia ano</p>
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img3h">
+                    <p id="descricao3h"> Tempo </p>
+                    <p class="temperatura" id="tempmax3h"><span>MAX</span>&deg;C</p>
+                    <p class="temperatura"> / </p>
+                    <p class="temperatura" id="tempmin3h"><span>MIN</span>&deg;C</p>
+                    </div>
+                    <div class="diaF">
+                        <p class="data3h2">DiaSemana Mes Dia ano</p>
+                        <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img3h2">
+                        <p id="descricao3h2"> Tempo </p>
+                        <p class="temperatura" id="tempmax3h2"><span>MAX</span>&deg;C</p>
+                        <p class="temperatura"> / </p>
+                        <p class="temperatura" id="tempmin3h2"><span>MIN</span>&deg;C</p>
+                        </div>
+
+
+                        <div class="diaF">
+                            <p class="data3h3">DiaSemana Mes Dia ano</p>
+                            <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img3h3">
+                            <p id="descricao3h3"> Tempo </p>
+                            <p class="temperatura" id="tempmax3h3"><span>MAX</span>&deg;C</p>
+                            <p class="temperatura"> / </p>
+                            <p class="temperatura" id="tempmin3h3"><span>MIN</span>&deg;C</p>
+                            </div>
+        
+                    <div class="diaF">
+                    <p class="data3h4">DiaSemana Mes Dia ano</p>
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img3h4">
+                    <p id="descricao3h4"> Tempo </p>
+                    <p class="temperatura" id="tempmax3h4"><span>MAX</span>&deg;C</p>
+                    <p class="temperatura"> / </p>
+                    <p class="temperatura" id="tempmin3h4"><span>MIN</span>&deg;C</p>
+                    </div>
+        
+                        <div class="diaF">
+                        <p class="data3h5">DiaSemana Mes Dia ano</p>
+                        <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem Condições do tempo" id="img3h5">
+                        <p id="descricao3h5"> Tempo </p>
+                        <p class="temperatura" id="tempmax3h5"><span>MAX</span>&deg;C</p>
+                        <p class="temperatura"> / </p>
+                        <p class="temperatura" id="tempmin3h5"><span>MIN</span>&deg;C</p>
+                        </div>
+
+     </div>
+
+  
+
+
+
+   
+        
+        
+        
+        
+        
+        </div>
+       
+        </div>
+        
+        </div>
+        </div>
+        </body>
+        </html>
+
+
+
+

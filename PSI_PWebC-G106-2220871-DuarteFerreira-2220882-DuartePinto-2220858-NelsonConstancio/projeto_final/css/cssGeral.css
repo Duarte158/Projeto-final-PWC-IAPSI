@@ -1,0 +1,21 @@
+/* GERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+body{
+   
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+body{
+
+    background-image: linear-gradient(to bottom right, #323544 , rgb(152, 174, 180));
+  }

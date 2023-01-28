@@ -1,0 +1,45 @@
+.topnav {
+
+    text-align: center;
+    background-color: #323544;
+
+    padding :30px;
+    border: 2px solid transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+      }
+
+
+ 
+ 
+  .topnav a:hover {
+    border-color: #009ad8;
+      color: #009ad8
+
+  }
+
+ .topnav .item , .active-item{
+
+    padding: 5px 40px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: .3s ease;
+            transition: .3s ease;
+    font-weight: 400;
+    text-decoration: none;
+ }
+
+
+ .topnav .active-item{
+
+    border-color: #009ad8;
+    color: #009ad8;
+ }
+
+.icon{
+    position: absolute;
+      margin-left: 5px;
+    margin-top: 5px;
+}

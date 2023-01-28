@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<!--Ligações-->
+
+    <link rel="stylesheet" href="css/cssGeral.css">
+    <link rel="stylesheet" href="css/cssDetalhes.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <script src="js/detalhes.js" defer ></script>
+
+    <!-- Google fonts // Utilizado para usar a diversos tipos de fontes de escrita // Nesta caso é utilizada a fonte Ubuntu-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--Font awesome //Utilizado para adicionar icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    
+    <link rel="icon" href="img/icon.ico" type="image">
+
+
+    
+    <title>Clima</title>
+</head>
+<body>
+
+  <div class="all">
+    <!--NAV BAR-->
+
+        <div class="topnav" >
+            <a href="index.html" class="item">Home</a>
+            <a href="detalhes.html" class="active-item">Detelhes</a>
+            <a href="forecast.html" class="item" >Forecast</a>
+            <a href="favoritos.html" class="item">Favoritos</a>
+            
+           
+        </div>
+
+      
+
+        <!--Titulo-->
+        <div>
+            <h2 class="titulo">Detalhes metreologicos</h2>
+
+     
+        </div>
+
+
+        <!--Bara de pesquisa-->
+
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" id="input-cidade" placeholder="Pesquisar localidade">
+               <button type="submit" class="searchButton" id="search">
+                 <i class="fa fa-search"></i>
+               
+                
+              </button>
+            </div>
+         </div>
+
+
+        <!--Nome da cidade-->
+
+    <div class="localizacao">
+      <h2>
+        <i class="fa-solid fa-location-dot"></i>
+        <span id="cidade"> </span>
+        <img id="pais" />
+      </h2>
+    </div>
+
+
+    <table>
+     
+      <tr>
+        <td id ="temperaturaAtual"> <i class="fas fa-temperature-high	"></i> Temperatura atual:  <span> </span> &deg;C</td>
+        <td id ="pressaoAtmos"><i class="fas fa-atmosphere"></i>Pressão Atmosferica:  <span> </span> hPa</td>
+        <td id ="ventoVelocidade"> <i class="fas fa-wind"></i> Vento:  <span> </span> Km/h </td>
+      </tr>
+      <tr>
+        <td id="temperaturaSentida"><i class="fas fa-temperature-low "></i>Temperatura Sentida:  <span> </span> &deg;C</td>
+        <td id="visibilidade"> <i class="fas fa-eye "> </i> Visibilidade:   <span> </span>m</td>
+        <td id="direçaoVento"> <i class="fas fa-wind"> </i> Direção Vento:   <span> </span> &deg;</td>
+      </tr>
+      <tr>
+        <td id="temperaturaMax"> <i class="fas fa-sort-amount-up"></i> Temperatura Máxima:  <span> </span> &deg;C</td>
+        <td id="humidade"> <i class="fas fa-tint"></i> Humidade:  <span> </span>%</td>
+        <td id="nascerSol"> <i class="fas fa-sun"></i> Nascer do Sol: <span> </span> (GMT+0)</td>
+      </tr>
+
+      <tr>
+        <td id="temperaturaMin"><i class="fas fa-sort-amount-down-alt	"></i> Temperatura Mínima:  <span> </span>  &deg;C  </td>
+        <td id="nuvens"> <i class="fas fa-smog"></i> Nuvens:  <span> </span>%</td>
+        <td id="porSol"> <i class="	far fa-sun	"></i> Pôr do sol: <span> </span>(GMT+0)</td>
+      </tr>
+    </table>
+
+
+
+</table>
+
+
+
+
+
+ 
+</div>
+
+
+</body>
+</html>

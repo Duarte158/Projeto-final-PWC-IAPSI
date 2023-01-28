@@ -1,0 +1,146 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #009ad8;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #009ad8;
+}
+
+.searchTerm:focus {
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #009ad8;
+  background: #009ad8;
+  text-align: center;
+  color: #fff;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.all {
+
+  height: 470px;
+
+}
+
+
+.divider2 {
+
+  background: #323544;
+  height: 5px;
+  border-radius: 5px;
+}
+
+
+.forecastDia {
+  margin: 300px 300px;
+  color: white;
+}
+
+.semanaF {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+
+
+
+
+}
+
+
+
+
+
+.titulo {
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+
+
+.diaF {
+  text-align: center;
+  background-color: #323544;
+  box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  position: relative;
+  top: 1%;
+  right: auto;
+  left: auto;
+
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+}
+
+
+
+
+.temperatura {
+
+  display: inline-block;
+
+
+}
+
+
+.localizacao {
+
+  text-align: center;
+  position: relative;
+  bottom: 3cm;
+
+}
+
+
+.botaoLoc{
+  text-align: center;
+  padding-top: 1%;
+}
+
+.locAtual {
+  background-color: white;
+  padding: 5px 40px;
+  color: black;
+  border: 2px solid #009ad8;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+}
+
+.locAtual:hover {
+  background-color: #323544; 
+  color: white;
+}
+
+.locAtual:active {
+  background-color: #323544; 
+  color: white;
+}
